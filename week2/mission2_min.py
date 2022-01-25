@@ -65,7 +65,7 @@ class ReadCSV():
 
     def merge_list(self):
         csv_file = self.read_file()
-        merge_list = [sum(list(map(int, line))) for line in csv_file ]
+        merge_list = [sum(list(map(int, line))) for line in csv_file]
         return merge_list
 
 read_csv = ReadCSV(filepath)
@@ -89,7 +89,7 @@ class ReadCSV():
 
     def merge_list(self):
         csv_file = self.read_file()
-        merge_list = [sum(list(map(int, line)))/len(line) for line in csv_file ]
+        merge_list = [sum(list(map(int, line)))/len(line) for line in csv_file]
         return sorted(merge_list)
 
 read_csv = ReadCSV(filepath)
